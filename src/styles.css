@@ -31,7 +31,8 @@
 
 body {
   margin: 0;
-  background: linear-gradient(180deg, var(--blue-pale) 0%, var(--white-cool) 40%);
+  background: linear-gradient(160deg, #fdeef6 0%, #fbe4f1 18%, #f6dced 32%, #e9deef 48%, #d9e7f4 64%, #cfe8ff 82%, #c3e3ff 100%);
+  background-attachment: fixed;
   font-family: var(--font-body);
   color: var(--text-dark);
   min-height: 100vh;
@@ -90,14 +91,17 @@ input:focus, textarea:focus, select:focus {
 
 .app-header h1 {
   font-size: 32px;
-  color: var(--magenta-dark);
+  background: linear-gradient(90deg, var(--magenta-dark) 0%, #c44b9e 50%, #5b8fc7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
 .signout-btn {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.6);
   color: var(--text-muted);
   font-size: 14px;
   padding: 8px 14px;
@@ -118,10 +122,12 @@ input:focus, textarea:focus, select:focus {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  background: linear-gradient(150deg, #fdeef6 0%, #f7d9ec 25%, #e9deef 50%, #d4e6f6 75%, #c3e3ff 100%);
 }
 
 .login-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(10px);
   border-radius: var(--radius);
   box-shadow: var(--shadow-hover);
   padding: var(--space-5) var(--space-4);
@@ -133,7 +139,10 @@ input:focus, textarea:focus, select:focus {
 
 .login-card h1 {
   font-size: 28px;
-  color: var(--magenta-dark);
+  background: linear-gradient(90deg, var(--magenta-dark) 0%, #5b8fc7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin-bottom: 6px;
   text-align: center;
 }
@@ -164,7 +173,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .login-submit {
-  background: var(--magenta);
+  background: linear-gradient(90deg, var(--magenta) 0%, #8b7fc2 60%, #6ba3d6 100%);
   color: white;
   padding: 12px;
   font-size: 15px;
@@ -173,7 +182,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .login-submit:hover {
-  background: var(--magenta-dark);
+  background: linear-gradient(90deg, var(--magenta-dark) 0%, #7a6fb0 60%, #5a92c5 100%);
   box-shadow: var(--shadow-soft);
 }
 
@@ -193,7 +202,8 @@ input:focus, textarea:focus, select:focus {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: var(--space-3);
-  background: white;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
   padding: var(--space-2);
   border-radius: var(--radius);
   box-shadow: var(--shadow-soft);
@@ -209,7 +219,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .add-btn {
-  background: var(--magenta);
+  background: linear-gradient(90deg, var(--magenta) 0%, #6ba3d6 100%);
   color: white;
   padding: 10px 18px;
   font-size: 14px;
@@ -218,7 +228,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .add-btn:hover {
-  background: var(--magenta-dark);
+  background: linear-gradient(90deg, var(--magenta-dark) 0%, #5a92c5 100%);
 }
 
 /* ---------- Grid & Cards ---------- */
@@ -230,7 +240,8 @@ input:focus, textarea:focus, select:focus {
 }
 
 .destination-card {
-  background: white;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(6px);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow-soft);
@@ -259,7 +270,7 @@ input:focus, textarea:focus, select:focus {
 .card-image-placeholder {
   width: 100%;
   height: 160px;
-  background: linear-gradient(135deg, var(--pink-soft), var(--blue-light));
+  background: linear-gradient(135deg, var(--pink-soft) 0%, #e3ddf0 50%, var(--blue-light) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -345,7 +356,7 @@ input:focus, textarea:focus, select:focus {
 
 .card-tag {
   font-size: 11px;
-  background: var(--pink-pale);
+  background: linear-gradient(90deg, var(--pink-pale) 0%, var(--blue-pale) 100%);
   color: var(--magenta-dark);
   padding: 3px 9px;
   border-radius: 20px;
@@ -377,12 +388,12 @@ input:focus, textarea:focus, select:focus {
 }
 
 .card-action-btn.is-active {
-  background: var(--magenta);
+  background: linear-gradient(90deg, var(--magenta) 0%, #6ba3d6 100%);
   color: white;
 }
 
 .card-action-btn.is-active:hover {
-  background: var(--magenta-dark);
+  background: linear-gradient(90deg, var(--magenta-dark) 0%, #5a92c5 100%);
 }
 
 .card-action-btn.danger:hover {
@@ -416,8 +427,12 @@ input:focus, textarea:focus, select:focus {
 
 .modal-card h2 {
   font-size: 22px;
-  color: var(--magenta-dark);
+  background: linear-gradient(90deg, var(--magenta-dark) 0%, #5b8fc7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
   margin-bottom: var(--space-3);
+  display: inline-block;
 }
 
 .form-field {
@@ -458,7 +473,7 @@ input:focus, textarea:focus, select:focus {
 }
 
 .image-input-toggle button.is-active {
-  background: var(--pink-pale);
+  background: linear-gradient(90deg, var(--pink-pale) 0%, var(--blue-pale) 100%);
   color: var(--magenta-dark);
   border-color: var(--magenta);
 }
@@ -495,12 +510,12 @@ input:focus, textarea:focus, select:focus {
 }
 
 .btn-save {
-  background: var(--magenta);
+  background: linear-gradient(90deg, var(--magenta) 0%, #6ba3d6 100%);
   color: white;
 }
 
 .btn-save:hover {
-  background: var(--magenta-dark);
+  background: linear-gradient(90deg, var(--magenta-dark) 0%, #5a92c5 100%);
 }
 
 .btn-save:disabled {
